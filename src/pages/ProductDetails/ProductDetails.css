@@ -1,0 +1,113 @@
+.product-details-caontainer {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  font-family: "Anek Latin", sans-serif;
+}
+
+.product-details-images-conatiner {
+  width: 75%;
+  margin: 1rem 0.5rem 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.product-details-images-conatiner img {
+  max-width: 46%;
+}
+
+.prouduct-details-information-container {
+    width: 25%;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    position: fixed;
+    top: 12%;
+    right: 0%;
+    width: 25%;
+word-spacing: 0.2rem;
+letter-spacing: 0.5rem;
+  }
+
+.product-details-brand-name {
+  color: #7e7f7f;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 0px;
+}
+
+.product-details-sneaker-details {
+  font-weight: 700;
+  letter-spacing: normal;
+  font-size: 33px;
+  line-height: 42px;
+}
+
+.product-details-price {
+  margin-top: 7px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: normal;
+}
+
+
+
+.size-container {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.size-box {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 72px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: black;
+  color: white;
+}
+
+.add-to-cart-button {
+  width: 80%;
+  cursor: pointer;
+  background-color: black;
+  padding: 1.7rem;
+  color: white;
+  text-align: center;
+}
+
+.about-section-container{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 1.2rem;
+}
+
+.about-product-heading{
+    font-size: 22px;
+    color: #7e7f7f;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem;
+    border-bottom: 2px solid gray;
+}
+
+.product-about-list{
+    font-size: 17px;
+    word-spacing: .2rem;
+    line-height: 15px;
+}

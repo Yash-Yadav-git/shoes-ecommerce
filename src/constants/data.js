@@ -13,7 +13,7 @@ export const productData = [
   {
     id: 2,
     brand: "Nike",
-    shoeName: "AIR FORCE 1 HIGH '07 LX 'BLACK/BEACH/SMOKE",
+    shoeName: "AIR FORCE 1 HIGH '08 LX 'BLACK/BEACH/SMOKE",
     imageLeft: imageLeft,
     imageRight: imageRight,
     Price: 6999,
@@ -21,7 +21,7 @@ export const productData = [
   {
     id: 3,
     brand: "Nike",
-    shoeName: "AIR FORCE 1 HIGH '07 LX 'BLACK/BEACH/SMOKE",
+    shoeName: "AIR FORCE 1 HIGH '18 LX 'BLACK/BEACH/SMOKE",
     imageLeft: imageLeft,
     imageRight: imageRight,
     Price: 6999,
@@ -29,7 +29,7 @@ export const productData = [
   {
     id: 4,
     brand: "Nike",
-    shoeName: "AIR FORCE 1 HIGH '07 LX 'BLACK/BEACH/SMOKE",
+    shoeName: "AIR FORCE 1 HIGH '100 LX 'BLACK/BEACH/SMOKE",
     imageLeft: imageLeft,
     imageRight: imageRight,
     Price: 6999,
@@ -45,7 +45,7 @@ export const productData = [
   {
     id: 6,
     brand: "Nike",
-    shoeName: "AIR FORCE 1 HIGH '07 LX 'BLACK/BEACH/SMOKE",
+    shoeName: "AIR FORCE 1 HIGH '29 LX 'BLACK/BEACH/SMOKE",
     imageLeft: imageLeft,
     imageRight: imageRight,
     Price: 6999,
@@ -61,7 +61,7 @@ export const productData = [
   {
     id: 8,
     brand: "Nike",
-    shoeName: "AIR FORCE 1 HIGH '07 LX 'BLACK/BEACH/SMOKE",
+    shoeName: "AIR FORCE 1 HIGH '30 LX 'BLACK/BEACH/SMOKE",
     imageLeft: imageLeft,
     imageRight: imageRight,
     Price: 6999,

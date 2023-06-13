@@ -1,3 +1,4 @@
+
 .product-display-wrapper {
   margin-top: 20px;
   display: flex;
@@ -50,7 +51,6 @@
 .list {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   margin: 0 80px;
   gap: 30px;
   overflow: hidden;
@@ -82,9 +82,17 @@
   max-width: 23.5%;
   cursor: pointer;
 }
+.homepage-product-list p{
+  margin: 0px;
+}
 
-.product-display-list-brand_name {
+.brand_name {
   color: #7e7f7f;
+}
+
+.shoe-details{
+  font-size: 16px;
+  font-weight: 700;
 }
 
 a:link{

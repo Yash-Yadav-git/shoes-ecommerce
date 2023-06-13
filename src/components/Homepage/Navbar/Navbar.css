@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  position: sticky;
-  top: 0%;
-  width: 100%;
-  z-index: 2;
+  /* position: sticky; */
+  /* top: 0%; */
+  /* width: 100%; */
+  /* z-index: 2; */
 }
 
 .nav-details-wrapper {
@@ -20,7 +20,7 @@
 
 .nav-details-wrapper img {
   width: 2.5rem;
-  height: 2.5rempx;
+  /* height: 2.5rempx; */
 }
 
 .profile-icon-wrapper {
