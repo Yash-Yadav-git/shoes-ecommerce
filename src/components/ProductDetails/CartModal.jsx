@@ -32,7 +32,7 @@ const CartModal = ({ showCart, handleCartClick, data }) => {
           <div className="modal-main">
             <div className="modal-header">
               <div className="modal-heading">
-                <span>Modal Heading</span>
+                <span>Shooping Cart</span>
               </div>
               <div
                 className="modal-cross-icon"
@@ -42,6 +42,68 @@ const CartModal = ({ showCart, handleCartClick, data }) => {
               </div>
             </div>
             <div className="modal-product-list-container">
+              <div className="modal-product-item">
+                <div className="modal-image">
+                  <img src={data.imageLeft} />
+                </div>
+                <div className="modal-sneaker-information">
+                  <div className="sneaker-information-heading">
+                    <div className="modal-brand-name">{data.brand}</div>
+                    <div className="item-cross-icon">X</div>
+                  </div>
+                  <div className="modal-shoe-name">{data.shoeName}</div>
+                  <div className="modal-shoe-size">Shoe Size: (UK):6</div>
+                  <div className="modal-price-calculation">
+                    <div className="modal-price">6,000</div>
+                    <div className="price-toggle-container">
+                      <button
+                        className="toggle-button"
+                        onClick={() => handleCounterClick("sub")}
+                      >
+                        <img src={minusSign} />
+                      </button>
+                      <div className="no-of-items">{counter}</div>
+                      <button
+                        className="toggle-button"
+                        onClick={() => handleCounterClick("add")}
+                      >
+                        <img src={addSign} />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="modal-product-item">
+                <div className="modal-image">
+                  <img src={data.imageLeft} />
+                </div>
+                <div className="modal-sneaker-information">
+                  <div className="sneaker-information-heading">
+                    <div className="modal-brand-name">{data.brand}</div>
+                    <div className="item-cross-icon">X</div>
+                  </div>
+                  <div className="modal-shoe-name">{data.shoeName}</div>
+                  <div className="modal-shoe-size">Shoe Size: (UK):6</div>
+                  <div className="modal-price-calculation">
+                    <div className="modal-price">6,000</div>
+                    <div className="price-toggle-container">
+                      <button
+                        className="toggle-button"
+                        onClick={() => handleCounterClick("sub")}
+                      >
+                        <img src={minusSign} />
+                      </button>
+                      <div className="no-of-items">{counter}</div>
+                      <button
+                        className="toggle-button"
+                        onClick={() => handleCounterClick("add")}
+                      >
+                        <img src={addSign} />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className="modal-product-item">
                 <div className="modal-image">
                   <img src={data.imageLeft} />
