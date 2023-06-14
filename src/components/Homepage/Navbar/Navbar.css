@@ -3,10 +3,9 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  /* position: sticky; */
-  /* top: 0%; */
-  /* width: 100%; */
-  /* z-index: 2; */
+  border-bottom: .1rem solid rgb(237,234,234, 0.8);
+  box-shadow: -1px 0 6px 0px rgb(213, 206, 206);
+  background-color: rgb(255, 255, 255);
 }
 
 .nav-details-wrapper {
