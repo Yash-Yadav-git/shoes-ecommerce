@@ -4,7 +4,10 @@ import { getPrice } from "../../utlis/common";
 import { useState } from "react";
 import Navbar from "../../components/Homepage/Navbar/Navbar";
 import CartModal from "../../components/ProductDetails/CartModal";
-import { updateCartItems, useCartStore } from "../../redux/features/cart/cartSlice";
+import {
+  updateCartItems,
+  useCartStore,
+} from "../../redux/features/cart/cartSlice";
 
 const ProuctDetails = () => {
   const { state } = useLocation();
@@ -12,15 +15,23 @@ const ProuctDetails = () => {
   const [size, setSize] = useState(7);
   const [aboutSectionClicked, setAboutSectionClicked] = useState(false);
   const [showCart, setShowCart] = useState(false);
-  const {cartItems, updateCartItems} = useCartStore()
+  const { cartItems, updateCartItems } = useCartStore();
+  const [error, setError] = useState("");
 
-  const handleCartClick = () => {
+  const handleCloseCart = () => {
     setShowCart((prev) => !prev);
-    const { price, id } = data
-    let obj = { price, id, quantity: 1 }
   };
 
-  console.log(cartItems, updateCartItems('Hello'))
+  const handleCartClick = () => {
+    const dataLocal = data;
+    if (cartItems.find((item) => item.id === data.id)) {
+      setError("Item is already added to cart");
+      return;
+    }
+    dataLocal.quantity = 1;
+    updateCartItems(dataLocal);
+    setShowCart((prev) => !prev);
+  };
 
   return (
     <>
@@ -41,7 +52,7 @@ const ProuctDetails = () => {
           <div className="product-details-brand-name">{data.brand}</div>
           <div className="product-details-sneaker-details">{data.shoeName}</div>
           <div className="product-details-price">
-            &#8377; {getPrice(data.Price)}
+            &#8377; {getPrice(data.price)}
           </div>
           <div className="size-container">
             <div
@@ -84,7 +95,7 @@ const ProuctDetails = () => {
           <div className="add-to-cart-button" onClick={handleCartClick}>
             ADD TO CART
           </div>
-
+          {error && <div className="error">{error}</div>}
           <div
             className="about-section-container"
             onClick={() => setAboutSectionClicked((prev) => !prev)}
@@ -107,7 +118,7 @@ const ProuctDetails = () => {
       <CartModal
         showCart={showCart}
         data={data}
-        handleCartClick={handleCartClick}
+        handleCartClick={handleCloseCart}
       />
     </>
   );
