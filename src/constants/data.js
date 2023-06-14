@@ -8,7 +8,7 @@ export const productData = [
     shoeName: "AIR FORCE 1 HIGH '07 LX 'BLACK/BEACH/SMOKE",
     imageLeft:  imageLeft,
     imageRight: imageRight,
-    Price: 6999,
+    price: 6999,
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const productData = [
     shoeName: "AIR FORCE 1 HIGH '08 LX 'BLACK/BEACH/SMOKE",
     imageLeft: imageLeft,
     imageRight: imageRight,
-    Price: 6999,
+    price: 6999,
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const productData = [
     shoeName: "AIR FORCE 1 HIGH '18 LX 'BLACK/BEACH/SMOKE",
     imageLeft: imageLeft,
     imageRight: imageRight,
-    Price: 6999,
+    price: 6999,
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ export const productData = [
     shoeName: "AIR FORCE 1 HIGH '100 LX 'BLACK/BEACH/SMOKE",
     imageLeft: imageLeft,
     imageRight: imageRight,
-    Price: 6999,
+    price: 6999,
   },
   {
     id: 5,
@@ -40,7 +40,7 @@ export const productData = [
     shoeName: "AIR FORCE 1 HIGH '07 LX 'BLACK/BEACH/SMOKE",
     imageLeft: imageLeft,
     imageRight: imageRight,
-    Price: 6999,
+    price: 6999,
   },
   {
     id: 6,
@@ -48,7 +48,7 @@ export const productData = [
     shoeName: "AIR FORCE 1 HIGH '29 LX 'BLACK/BEACH/SMOKE",
     imageLeft: imageLeft,
     imageRight: imageRight,
-    Price: 6999,
+    price: 6999,
   },
   {
     id: 7,
@@ -56,7 +56,7 @@ export const productData = [
     shoeName: "AIR FORCE 1 HIGH '07 LX 'BLACK/BEACH/SMOKE",
     imageLeft: imageLeft,
     imageRight: imageRight,
-    Price: 6999,
+    price: 6999,
   },
   {
     id: 8,
@@ -64,6 +64,6 @@ export const productData = [
     shoeName: "AIR FORCE 1 HIGH '30 LX 'BLACK/BEACH/SMOKE",
     imageLeft: imageLeft,
     imageRight: imageRight,
-    Price: 6999,
+    price: 6999,
   },
 ];

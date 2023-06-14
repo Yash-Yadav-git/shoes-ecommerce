@@ -17,7 +17,7 @@ const ProductDisplayList = ({ data }) => {
       </div>
 
       <div className="homepage-product-list shoe-details">
-        <p>{getPrice(data.Price)}</p>
+        <p>{getPrice(data.price)}</p>
       </div>
     </li>
   );

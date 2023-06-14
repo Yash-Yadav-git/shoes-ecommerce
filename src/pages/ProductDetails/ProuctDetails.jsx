@@ -4,19 +4,23 @@ import { getPrice } from "../../utlis/common";
 import { useState } from "react";
 import Navbar from "../../components/Homepage/Navbar/Navbar";
 import CartModal from "../../components/ProductDetails/CartModal";
+import { updateCartItems, useCartStore } from "../../redux/features/cart/cartSlice";
 
 const ProuctDetails = () => {
   const { state } = useLocation();
   const { data } = state;
-  console.log(data);
   const [size, setSize] = useState(7);
   const [aboutSectionClicked, setAboutSectionClicked] = useState(false);
   const [showCart, setShowCart] = useState(false);
+  const {cartItems, updateCartItems} = useCartStore()
 
   const handleCartClick = () => {
     setShowCart((prev) => !prev);
-    console.log("handle cart clicked");
+    const { price, id } = data
+    let obj = { price, id, quantity: 1 }
   };
+
+  console.log(cartItems, updateCartItems('Hello'))
 
   return (
     <>

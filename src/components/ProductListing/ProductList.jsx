@@ -5,13 +5,13 @@ import { getPrice } from "../../utlis/common";
 
 const ProductDisplayList = ({ data }) => {
   const [productImage, setProductImage] = useState(data.imageLeft);
-  const { Price, id, shoeName } = data;
-  const [price, setPrice] = useState(Price);
+  const { price, id, shoeName } = data;
+  const [itemPrice, setItemPrice] = useState(price);
   const [shoeNameLocal, setshoeNameLocal] = useState([]);
 
   useEffect(() => {
-    if (Price) {
-      setPrice(getPrice(Price))
+    if (price) {
+      setItemPrice(getPrice(price))
     }
     if (shoeName) {
       for (let i = 0; i < shoeName.length; i++) {
@@ -20,7 +20,7 @@ const ProductDisplayList = ({ data }) => {
         }
       }
     }
-  }, [Price, shoeName]);
+  }, [price, shoeName]);
 
   return (
     <div
@@ -42,7 +42,7 @@ const ProductDisplayList = ({ data }) => {
         <p>{data.shoeName}</p>
       </di>
       <div className="sneaker-details price">
-        <p>&#8377; {price}</p>
+        <p>&#8377; {itemPrice}</p>
       </div>
     </div>
   );
