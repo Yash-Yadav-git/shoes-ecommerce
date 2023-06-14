@@ -6,31 +6,36 @@
   font-family: "Anek Latin", sans-serif;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .product-details-images-conatiner {
   width: 75%;
   margin: 1rem 0.5rem 1rem 1rem;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  height: 80vh;
 }
 .product-details-images-conatiner img {
   max-width: 46%;
 }
 
 .prouduct-details-information-container {
-    width: 25%;
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.7rem;
-    position: fixed;
-    top: 12%;
-    right: 0%;
-    width: 25%;
-word-spacing: 0.2rem;
-letter-spacing: 0.5rem;
-  }
+  width: 25%;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  position: fixed;
+  top: 12%;
+  right: 0%;
+  width: 25%;
+  word-spacing: 0.2rem;
+  letter-spacing: 0.5rem;
+}
 
 .product-details-brand-name {
   color: #7e7f7f;
@@ -53,8 +58,6 @@ letter-spacing: 0.5rem;
   line-height: 15px;
   letter-spacing: normal;
 }
-
-
 
 .size-container {
   display: flex;
@@ -89,25 +92,25 @@ letter-spacing: 0.5rem;
   text-align: center;
 }
 
-.about-section-container{
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    margin-top: 1.2rem;
+.about-section-container {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-top: 1.2rem;
 }
 
-.about-product-heading{
-    font-size: 22px;
-    color: #7e7f7f;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.7rem;
-    border-bottom: 2px solid gray;
+.about-product-heading {
+  font-size: 22px;
+  color: #7e7f7f;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+  border-bottom: 2px solid gray;
 }
 
-.product-about-list{
-    font-size: 17px;
-    word-spacing: .2rem;
-    line-height: 15px;
+.product-about-list {
+  font-size: 17px;
+  word-spacing: 0.2rem;
+  line-height: 15px;
 }
