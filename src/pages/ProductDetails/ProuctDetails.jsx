@@ -115,11 +115,13 @@ const ProuctDetails = () => {
           </div>
         </div>
       </div>
-      <CartModal
-        showCart={showCart}
-        data={data}
-        handleCartClick={handleCloseCart}
-      />
+      {showCart ? (
+        <CartModal
+          showCart={showCart}
+          data={data}
+          handleCartClick={handleCloseCart}
+        />
+      ) : null}
     </>
   );
 };
